@@ -2,7 +2,8 @@ var fetch = require('node-fetch');
 // Connect to server
 var io = require('socket.io-client')
 
-var socket = io.connect('http://localhost:3000/', {reconnect: true});
+// var socket = io.connect('http://localhost:3000/', {reconnect: true});
+var socket = io.connect('https://agile-shelf-81976.herokuapp.com/', {reconnect: true});
 
 // Add a connect listener
 socket.on('connect', (socket)=> { 
