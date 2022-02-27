@@ -16,7 +16,7 @@ socket.on('connect', (socket)=> {
   .then(data => {
     sendInfoToServer(data);
   });
-  },2000);
+  },20000);
 });
 
 var lastCollectedData;
